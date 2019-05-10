@@ -1,4 +1,14 @@
-let options = [];
+const CATEGORIES = [
+    'Math',
+    'Brute Force',
+    'Dynamic Programming',
+    'Graph',
+    'Geometry',
+    'Greedy',
+    'Data Structures',
+    'Search',
+    'Sorting',
+];
 
 $( '.dropdown-menu a' ).on( 'click', function( event ) {
 
@@ -18,7 +28,7 @@ $( '.dropdown-menu a' ).on( 'click', function( event ) {
    }
 
    $( event.target ).blur();
-      
+
    console.log( options );
    return false;
 });
